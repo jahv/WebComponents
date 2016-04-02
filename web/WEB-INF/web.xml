@@ -5,6 +5,7 @@
 	id="WebApp_ID" version="3.0">
 	<display-name>WebComponents</display-name>
 
+
 	<!-- CHAPTER 1 -->
 	<servlet>
 		<servlet-name>servletOne</servlet-name>
@@ -24,4 +25,70 @@
 		<servlet-name>beerSelecter</servlet-name>
 		<url-pattern>/chapter3/SelectBeer.do</url-pattern>
 	</servlet-mapping>
+	
+	
+	<!-- CHAPTER 4 -->
+	<servlet>
+		<servlet-name>servletLifeCycle</servlet-name>
+		<servlet-class>jahv.webcomponents.chapter4.ServletLifeCycle</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>servletLifeCycle</servlet-name>
+		<url-pattern>/chapter4/servletLifeCycle</url-pattern>
+	</servlet-mapping>
+	<!-- ### -->
+	<servlet>
+		<servlet-name>servletJar</servlet-name>
+		<servlet-class>jahv.webcomponents.chapter4.ServletJar</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>servletJar</servlet-name>
+		<url-pattern>/chapter4/servletJar.jar</url-pattern>
+	</servlet-mapping>
+	<!-- ### -->
+	<servlet>
+		<servlet-name>sendRedirectServlet</servlet-name>
+		<servlet-class>jahv.webcomponents.chapter4.SendRedirectServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>sendRedirectServlet</servlet-name>
+		<url-pattern>/chapter4/SendRedirectServlet</url-pattern>
+	</servlet-mapping>
+	<!-- ### -->
+	<servlet>
+		<servlet-name>requestDispatcherServlet</servlet-name>
+		<servlet-class>jahv.webcomponents.chapter4.RequestDispatcherServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>requestDispatcherServlet</servlet-name>
+		<url-pattern>/chapter4/requestDispatcherServlet</url-pattern>
+	</servlet-mapping>
+	
+	
+	<!-- CHAPTER 5 -->
+	<servlet>
+		<servlet-name>ParametersServlet</servlet-name>
+		<servlet-class>jahv.webcomponents.chapter5.ParametersServlet</servlet-class>
+		<init-param>
+			<param-name>ParametersServletData</param-name>
+			<param-value>Info related to the ParametersServlet servlet</param-value>
+		</init-param>
+		<init-param>
+			<param-name>param1</param-name>
+			<param-value>param1 value</param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ParametersServlet</servlet-name>
+		<url-pattern>/chapter5/parameterServlet</url-pattern>
+	</servlet-mapping>
+	
+	<context-param>
+		<param-name>ContextParamData</param-name>
+		<param-value>Info related to the whole application</param-value>
+	</context-param>
+	<context-param>
+		<param-name>Param1_context</param-name>
+		<param-value>Param1_context value</param-value>
+	</context-param>
 </web-app>
