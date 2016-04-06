@@ -88,7 +88,47 @@
 		<param-value>Info related to the whole application</param-value>
 	</context-param>
 	<context-param>
-		<param-name>Param1_context</param-name>
-		<param-value>Param1_context value</param-value>
+		<param-name>dogName</param-name>
+		<param-value>Misifus</param-value>
 	</context-param>
+	<context-param>
+		<param-name>dogBreed</param-name>
+		<param-value>Great Dane</param-value>
+	</context-param>
+	
+	
+	<servlet>
+		<servlet-name>ListenerServlet</servlet-name>
+		<servlet-class>jahv.webcomponents.chapter5.ListenerServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ListenerServlet</servlet-name>
+		<url-pattern>/chapter5/listenerServlet</url-pattern>
+	</servlet-mapping>
+	
+	<listener>
+		<listener-class>jahv.webcomponents.chapter5.listeners.AppServletContextListenerV2</listener-class>
+	</listener>
+	<listener>
+		<listener-class>jahv.webcomponents.chapter5.listeners.AppServletContextListener</listener-class>
+	</listener>
+	<listener>
+		<listener-class>jahv.webcomponents.chapter5.listeners.AppServletContextAttributeListener</listener-class>
+	</listener>
+	<listener>
+		<listener-class>jahv.webcomponents.chapter5.listeners.AppServletRequestListener</listener-class>
+	</listener>
+	<listener>
+		<listener-class>jahv.webcomponents.chapter5.listeners.AppServletRequestAttributeListener</listener-class>
+	</listener>
+	<listener>
+		<listener-class>jahv.webcomponents.chapter5.listeners.AppHttpSessionListener</listener-class>
+	</listener>
+	<listener>
+		<listener-class>jahv.webcomponents.chapter5.listeners.AppHttpSessionAttributeListener</listener-class>
+	</listener>
+	<listener>
+		<listener-class>jahv.webcomponents.chapter5.listeners.AppHttpSessionBindingListener</listener-class>
+	</listener>
+	
 </web-app>

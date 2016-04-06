@@ -1,0 +1,29 @@
+1) ServletContextAttributeListener 	=> ServletContextAttributeEvent
+2) ServletRequestAttributeListener 	=> ServletRequestAttributeEvent
+3) HttpSessionAttributeListener		=> HttpSessionBindingEvent
+
+	The 3 has the following methods:
+		attributeAdded
+		attributeRemoved
+		attributeReplaced
+
+	
+4) ServletContextListener	=> ServletContextEvent
+	contextInitialized
+	contextDestroyed
+	
+5) ServletRequestListener	=> ServletRequestEvent
+	requestInitialized
+	requestDestroyed
+	
+6) HttpSessionListener		=> HttpSessionEvent
+	sessionCreated
+	sessionDestroyed
+	
+7) HttpSessionBidingListener	=> HttpSessionBindingEvent
+	valueBound
+	valueUnbound
+	
+8) HttpSessionActivationListener	=> HttpSessionEvent
+	sessionWillPassivate
+	sessionDidActivate

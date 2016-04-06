@@ -1,0 +1,19 @@
+1	B #WRONG: B, C WERE CORRECT
+2	A, D, F	#OK
+3	A, B, D	#OK
+4	A, B, C, E	#WRONG: B WAS CORRECT
+5	D, F	#OK
+6	B, C, D	#OK
+7	D	#OK
+8	C	#OK
+9	D	#OK
+10	D	#OK
+11	C	#OK
+12	A, E	#OK
+13	D	#OK
+14	
+	HttpSession			getAttribute
+	ServletContext		getAttribute	getContextPath	
+	HttpServletRequest	getAttribute					getCookies
+	WRONG: HttpServletRequest HAS getContextPath
+15	A, C	#OK
